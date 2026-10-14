@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple and interactive temperature converter.">
+    <title>Thermal Studio | Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header class="header">
+            <a href="#" class="logo"><span class="logo-icon">◈</span> THERMAL<span class="accent"></span></a>
+            <span class="status"><span class="status-dot"></span> CONVERSION SYSTEM ONLINE</span>
+        </header>
+
+        <section class="intro">
+            <p class="eyebrow">PRECISION TEMPERATURE TOOL</p>
+            <h1>Feel the <span>Temperature</span></h1>
+            <p class="subtitle">One value. Three scales. Instant results.</p>
+        </section>
+
+        <section class="converter" aria-label="Temperature converter">
+            <div class="input-panel">
+                <label for="temperature">ENTER TEMPERATURE</label>
+                <div class="input-row">
+                    <input id="temperature" type="number" step="any"
+                        placeholder="25" aria-describedby="input-help">
+                    <select id="unit" aria-label="Input temperature unit">
+                        <option value="C">°C</option>
+                        <option value="F">°F</option>
+                        <option value="K">K</option>
+                    </select>
+                </div>
+                <p id="input-help" class="helper">Choose the unit of your input value.</p>
+                <p id="error" class="error" role="alert"></p>
+                <button id="convert" class="convert-btn">Convert temperature <span>↗</span></button>
+            </div>
+
+            <div class="results-panel">
+                <div class="results-heading">
+                    <div>
+                        <p class="eyebrow">CONVERSION RESULTS</p>
+                        <h2>Your readings</h2>
+                    </div>
+                    <span class="live-tag">LIVE</span>
+                </div>
+
+                <article class="result-card celsius">
+                    <div class="scale"><span class="scale-icon">°</span><span>CELSIUS</span></div>
+                    <p id="celsius" class="result-value">— <small>°C</small></p>
+                </article>
+
+                <article class="result-card fahrenheit">
+                    <div class="scale"><span class="scale-icon">°</span><span>FAHRENHEIT</span></div>
+                    <p id="fahrenheit" class="result-value">— <small>°F</small></p>
+                </article>
+
+                <article class="result-card kelvin">
+                    <div class="scale"><span class="scale-icon">K</span><span>KELVIN</span></div>
+                    <p id="kelvin" class="result-value">— <small>K</small></p>
+                </article>
+
+                <button id="copy" class="copy-btn" disabled>▣ Copy all results</button>
+                <p id="copy-status" class="copy-status" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section class="quick-values">
+            <p class="eyebrow">TRY AN EXAMPLE</p>
+            <div class="examples">
+                <button class="example" data-value="0" data-unit="C">Water freezes <span>0°C</span></button>
+                <button class="example" data-value="100" data-unit="C">Water boils <span>100°C</span></button>
+                <button class="example" data-value="37" data-unit="C">Body temperature <span>37°C</span></button>
+                <button class="example" data-value="-40" data-unit="C">Equal scales <span>-40°C</span></button>
+            </div>
+        </section>
+
+        <footer>
+            <span>THERMAL STUDIO <span class="accent">
+            </span>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
