@@ -1,5 +1,5 @@
 
-name: Deploy Personal Portfolio
+name: Deploy OIBSIP Projects
 
 on:
   push:
@@ -30,10 +30,19 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Prepare portfolio files
+      - name: Prepare website files
         run: |
-          mkdir public
+          mkdir -p public/Level-1/Task-1-Landing-Page
+          mkdir -p public/Level-1/Task-2-personal-portfolio
+          mkdir -p public/Level-1/Task-3-temperature-converter
+
+          cp -r Level-1/Task-1-Landing-Page/. public/Level-1/Task-1-Landing-Page/
+          cp -r Level-1/Task-2-personal-portfolio/. public/Level-1/Task-2-personal-portfolio/
+          cp -r Level-1/Task-3-temperature-converter/. public/Level-1/Task-3-temperature-converter/
+
+          cp Level-1/Task-2-personal-portfolio/index.html public/index.html
           cp -r Level-1/Task-2-personal-portfolio/. public/
+          mkdir -p public/Level-1
           touch public/.nojekyll
 
       - name: Upload site artifact
@@ -41,6 +50,7 @@ jobs:
         with:
           path: public
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v4
+
