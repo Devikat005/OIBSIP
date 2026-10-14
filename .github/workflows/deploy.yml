@@ -34,11 +34,11 @@ jobs:
         run: |
           mkdir -p public/Level-1/Task-1-Landing-Page
           mkdir -p public/Level-1/Task-2-personal-portfolio
-          mkdir -p public/Level-1/Task-3-temperature-converter
+          mkdir -p public/Level-1/Task-3-Temperature-converter
 
           cp -r Level-1/Task-1-Landing-Page/. public/Level-1/Task-1-Landing-Page/
           cp -r Level-1/Task-2-personal-portfolio/. public/Level-1/Task-2-personal-portfolio/
-          cp -r Level-1/Task-3-temperature-converter/. public/Level-1/Task-3-temperature-converter/
+          cp -r Level-1/Task-3-Temperature-converter/. public/Level-1/Task-3-Temperature-converter/
 
           cp Level-1/Task-2-personal-portfolio/index.html public/index.html
           cp -r Level-1/Task-2-personal-portfolio/. public/
