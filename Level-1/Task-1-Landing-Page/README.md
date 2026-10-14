@@ -13,6 +13,7 @@ Responsive navigation
 - Idea section
 - Contact section
 - Footer
+  
 Project Preview
 Screenshots of the project are included in the `screenshots` folder.
 Internship
