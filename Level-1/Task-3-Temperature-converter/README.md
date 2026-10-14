@@ -5,22 +5,32 @@
 
 Features
 
-•Convert temperatures between Celsius, Fahrenheit, and Kelvin.
-•Display conversion results instantly.
-•Validate temperature inputs.
-•Prevent temperatures below absolute zero.
-•Responsive design for different screen sizes.
+   •Convert temperatures between Celsius, Fahrenheit, and Kelvin.
+
+   •Display conversion results instantly.
+
+   •Validate temperature inputs.
+
+   •Prevent temperatures below absolute zero.
+
+   •Responsive design for different screen sizes.
+
 
 Technologies Used
 
-  •HTML5
-  •CSS3
-  •JavaScript
+    •HTML5
+  
+    •CSS3
+  
+    •JavaScript
 
  Conversion Formulas
 
-  •Celsius to Fahrenheit: °F = (°C × 9/5) + 32
-  •Fahrenheit to Celsius: °C = (°F − 32) × 5/9
-  •Celsius to Kelvin: K = °C + 273.15
-  •Kelvin to Celsius: °C = K − 273.15
+    •Celsius to Fahrenheit: °F = (°C × 9/5) + 32
+  
+    •Fahrenheit to Celsius: °C = (°F − 32) × 5/9
+  
+    •Celsius to Kelvin: K = °C + 273.15
+  
+    •Kelvin to Celsius: °C = K − 273.15
 
